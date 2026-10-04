@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFDF5" />
+  <title>ARE YOU SERIOUS — Rashal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&display=block" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #FFFDF5;
+      font-family: 'Space Grotesk', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* halftone texture */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: radial-gradient(#000 1.5px, transparent 1.5px);
+      background-size: 24px 24px;
+      opacity: 0.05;
+      pointer-events: none;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 40px 24px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      background: #FFD93D;
+      border: 3px solid #000;
+      box-shadow: 4px 4px 0px 0px #000;
+      padding: 6px 14px;
+      margin-bottom: 32px;
+      transform: rotate(-2deg);
+    }
+
+    .headline {
+      font-size: clamp(56px, 14vw, 160px);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 0.85;
+      text-transform: uppercase;
+      position: relative;
+      margin-bottom: 40px;
+    }
+
+    .headline-outline {
+      display: block;
+      color: transparent;
+      -webkit-text-stroke: 4px #000;
+    }
+
+    .headline-solid {
+      display: block;
+      color: #FF6B6B;
+      transform: translateX(10px);
+      margin-top: -0.05em;
+    }
+
+    .headline-last {
+      display: block;
+      color: #000;
+      transform: translateX(-6px);
+    }
+
+    .sub {
+      font-size: clamp(16px, 2.5vw, 22px);
+      font-weight: 700;
+      color: #000;
+      border: 4px solid #000;
+      background: #C4B5FD;
+      box-shadow: 6px 6px 0px 0px #000;
+      padding: 14px 28px;
+      display: inline-block;
+      margin-bottom: 48px;
+      transform: rotate(1deg);
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #000;
+      text-decoration: none;
+      padding: 14px 32px;
+      min-height: 48px;
+      background: #FF6B6B;
+      border: 3px solid #000;
+      box-shadow: 4px 4px 0px 0px #000;
+      transition: box-shadow 0.1s, transform 0.1s;
+    }
+    .back-btn:hover  { box-shadow: 6px 6px 0px 0px #000; }
+    .back-btn:active { transform: translate(4px, 4px); box-shadow: none; }
+
+    /* floating decorative stickers */
+    .sticker {
+      position: fixed;
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      line-height: 1.3;
+      text-align: center;
+      border: 4px solid #000;
+      padding: 16px 20px;
+      box-shadow: 8px 8px 0px 0px #000;
+      pointer-events: none;
+    }
+    .sticker-1 {
+      background: #FFD93D;
+      top: 60px; left: 40px;
+      transform: rotate(-8deg);
+      animation: float-a 4s ease-in-out infinite;
+    }
+    .sticker-2 {
+      background: #C4B5FD;
+      bottom: 80px; right: 40px;
+      transform: rotate(6deg);
+      animation: float-b 5s ease-in-out infinite;
+    }
+    .sticker-3 {
+      background: #FF6B6B;
+      top: 50%; right: 60px;
+      transform: rotate(-4deg) translateY(-50%);
+      animation: float-a 6s ease-in-out infinite;
+    }
+
+    @keyframes float-a { 0%,100%{transform:rotate(-8deg) translateY(0)} 50%{transform:rotate(-8deg) translateY(-12px)} }
+    @keyframes float-b { 0%,100%{transform:rotate(6deg) translateY(0)} 50%{transform:rotate(6deg) translateY(-10px)} }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+
+    @media (max-width: 600px) {
+      .sticker { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sticker sticker-1">NO<br>WAY<br>★</div>
+  <div class="sticker sticker-2">★<br>LOL<br>★</div>
+  <div class="sticker sticker-3">REALLY<br>?!</div>
+
+  <div class="container">
+    <div class="badge">⚠ Warning ⚠</div>
+
+    <h1 class="headline">
+      <span class="headline-outline">ARE YOU</span>
+      <span class="headline-solid">SERIOUS</span>
+      <span class="headline-last">RIGHT NOW?</span>
+    </h1>
+
+    <p class="sub">WhatsApp? Really? Just email me 😭</p>
+
+    <a href="index.html#contact" class="back-btn">← Take Me Back</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFDF5" />
+  <title>Rashal — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&display=block" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" aria-label="Main navigation">
+    <span class="nav-logo">R.Dev</span>
+    <button class="nav-hamburger" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#support" class="nav-link">Support</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero" aria-label="Home">
+    <div class="hero-texture" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>★</span> Creative Developer & Designer <span>★</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-title-outline">RASHAL</span>
+          <span class="hero-title-solid">RASHAL</span>
+        </h1>
+        <p class="hero-role">
+          <span id="typedRole"></span><span class="cursor-blink">|</span>
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View Work ↗</a>
+          <a href="#contact" class="btn-outline">Get in Touch</a>
+          <button class="btn-vibe" id="vibeBtn" aria-label="Open music player">♫ Main Character Vibe</button>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-sticker hero-sticker--red">
+          <span>★</span><br>AVAILABLE<br>FOR HIRE<br><span>★</span>
+        </div>
+        <div class="hero-sticker hero-sticker--yellow">
+          WEB<br>DEV
+        </div>
+        <div class="hero-sticker hero-sticker--violet">
+          UI / UX
+        </div>
+        <div class="hero-bg-number">01</div>
+        <a href="https://open.spotify.com/playlist/37i9dQZF1EJJDVlaAPdFYn?si=2fbde12394204d22" target="_blank" rel="noopener noreferrer" class="hero-sticker hero-sticker--spotify" aria-label="Open Spotify playlist">
+          <span class="spotify-icon" aria-hidden="true">♫</span>
+          <span>NOW<br>PLAYING</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE DIVIDER -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>CREATIVE DEVELOPER</span><span class="marquee-star">★</span>
+      <span>UI / UX DESIGNER</span><span class="marquee-star">★</span>
+      <span>FRONT-END ENGINEER</span><span class="marquee-star">★</span>
+      <span>DIGITAL ARTIST</span><span class="marquee-star">★</span>
+      <span>CREATIVE DEVELOPER</span><span class="marquee-star">★</span>
+      <span>UI / UX DESIGNER</span><span class="marquee-star">★</span>
+      <span>FRONT-END ENGINEER</span><span class="marquee-star">★</span>
+      <span>DIGITAL ARTIST</span><span class="marquee-star">★</span>
+      <span>CREATIVE DEVELOPER</span><span class="marquee-star">★</span>
+      <span>UI / UX DESIGNER</span><span class="marquee-star">★</span>
+      <span>FRONT-END ENGINEER</span><span class="marquee-star">★</span>
+      <span>DIGITAL ARTIST</span><span class="marquee-star">★</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="section" aria-label="About">
+    <p class="section-label">01 — About</p>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="section-heading">WHO<br><span class="heading-accent">I AM</span></h2>
+        <p class="about-bio">
+          I'm a creative developer & designer who loves building beautiful digital experiences.
+          Passionate about blending aesthetics with functionality — from pixel-perfect UIs to smooth interactions.
+        </p>
+        <div class="about-tags">
+          <a href="https://open.spotify.com/playlist/37i9dQZF1EJJDVlaAPdFYn?si=2fbde12394204d22" target="_blank" rel="noopener noreferrer" class="tag tag--spotify">♫ Music Lover</a>
+          <span class="tag tag--red">Designer</span>
+          <span class="tag tag--yellow">Coder</span>
+          <span class="tag">Web Dev</span>
+        </div>
+      </div>
+      <div class="neo-card info-card">
+        <div class="info-card-header">QUICK INFO</div>
+        <ul class="info-list">
+          <li><span class="info-label">Name</span><span>Rashal</span></li>
+          <li><span class="info-label">Role</span><span>Creative Developer</span></li>
+          <li><span class="info-label">Location</span><span>Earth</span></li>
+          <li><span class="info-label">Status</span><span class="available">● Available</span></li>
+          <li><span class="info-label">Vibe</span><span>Loud & Raw</span></li>
+        </ul>
+        <a href="#contact" class="btn-primary" style="display:block;text-align:center;margin-top:20px">Hire Me ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section--yellow" aria-label="Skills">
+    <p class="section-label">02 — Skills</p>
+    <h2 class="section-heading">WHAT<br><span class="heading-accent">I DO</span></h2>
+    <div class="skills-grid">
+      <div class="neo-card skill-card">
+        <div class="skill-card-header">FRONTEND</div>
+        <div class="skill-bar-wrap"><span>HTML / CSS</span><div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div></div>
+        <div class="skill-bar-wrap"><span>JavaScript</span><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div>
+        <div class="skill-bar-wrap"><span>React</span><div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div></div>
+        <div class="skill-bar-wrap"><span>TypeScript</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></div>
+      </div>
+      <div class="neo-card skill-card">
+        <div class="skill-card-header skill-card-header--red">DESIGN</div>
+        <div class="skill-bar-wrap"><span>Figma</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
+        <div class="skill-bar-wrap"><span>UI / UX</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+        <div class="skill-bar-wrap"><span>Photoshop</span><div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div></div>
+        <div class="skill-bar-wrap"><span>Motion</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div>
+      </div>
+      <div class="neo-card skill-card">
+        <div class="skill-card-header skill-card-header--violet">TOOLS</div>
+        <div class="skill-bar-wrap"><span>Git / GitHub</span><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div>
+        <div class="skill-bar-wrap"><span>VS Code</span><div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div></div>
+        <div class="skill-bar-wrap"><span>Node.js</span><div class="skill-bar"><div class="skill-fill" style="--w:72%"></div></div></div>
+        <div class="skill-bar-wrap"><span>Tailwind</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section" aria-label="Projects">
+    <p class="section-label">03 — Projects</p>
+    <h2 class="section-heading">SELECTED<br><span class="heading-accent">WORK</span></h2>
+    <div class="projects-grid" id="projectsGrid">
+
+      <div class="neo-card project-card">
+        <div class="thumb-placeholder thumb-placeholder--yellow">
+          <span>🔨</span>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Working On It</h3>
+          <p class="project-desc">Something exciting is being built. Check back soon.</p>
+          <div class="project-tags">
+            <span class="ptag">In Progress</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section--black" aria-label="Contact">
+    <p class="section-label section-label--white">04 — Contact</p>
+    <h2 class="section-heading section-heading--white">LET'S<br><span class="heading-accent--yellow">CONNECT</span></h2>
+    <div class="contact-grid">
+      <div class="neo-card neo-card--white link-card">
+        <div class="link-card-header">REACH OUT</div>
+        <a href="mailto:RashalWeb@outlook.com" class="contact-link">
+          <span class="link-icon" aria-hidden="true">✉</span>
+          <span>RashalWeb@outlook.com</span>
+        </a>
+        <a href="https://github.com/rashalsekh43-pixel" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <span class="link-icon" aria-hidden="true">↗</span>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/rashal-sekh-y2008" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <span class="link-icon" aria-hidden="true">↗</span>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://instagram.com/rashl.fr" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <span class="link-icon" aria-hidden="true">↗</span>
+          <span>Instagram — @rashl.fr</span>
+        </a>
+        <a href="serious.html" class="contact-link contact-link--whatsapp">
+          <span class="link-icon" aria-hidden="true">💬</span>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+      <div class="neo-card neo-card--white contact-form-card">
+        <div class="link-card-header link-card-header--red">SEND A MESSAGE</div>
+        <form id="contactForm" novalidate>
+          <input type="hidden" name="accessKey" value="sf_9052ce3189767b862cdffd0c" />
+          <input type="hidden" name="redirectTo" value="" id="formRedirect" />
+          <div class="form-group">
+            <label for="contactName">Name</label>
+            <input type="text" id="contactName" name="name" placeholder="Your name" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" name="email" placeholder="your@email.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" placeholder="What's on your mind?" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary form-submit" id="contactSubmit">Send Message ↗</button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPPORT -->
+  <section id="support" class="section" aria-label="Support the developer">
+    <p class="section-label">05 — Support</p>
+    <h2 class="section-heading">SUPPORT<br><span class="heading-accent">THE DEV</span></h2>
+    <div class="support-grid">
+      <div class="neo-card support-card">
+        <div class="support-card-header">☕ BUY ME A COFFEE</div>
+        <p class="support-intro">
+          If you like my work and want to support it, every bit means a lot. ☕
+        </p>
+        <div class="upi-row">
+          <span class="upi-label">UPI ID</span>
+          <div class="upi-id-wrap">
+            <span class="upi-id" id="upiId">rasl@scl</span>
+            <button class="btn-copy" id="copyUpi" aria-label="Copy UPI ID">Copy</button>
+          </div>
+        </div>
+
+        <!-- Pay button -->
+        <a href="upi://pay?pa=rasl@scl&pn=Rashal&cu=INR" class="btn-upi" id="upiPayBtn">
+          <span aria-hidden="true">💳</span> Pay with UPI
+        </a>
+
+        <p class="support-note">
+          Scan with any UPI app — GPay, PhonePe, Paytm, BHIM &amp; more.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <span class="footer-copy">© 2025 RASHAL</span>
+    <nav class="footer-legal" aria-label="Legal pages">
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="cookie-policy.html">Cookies</a>
+      <a href="refund-policy.html">Refund Policy</a>
+      <a href="legal-hub.html">Legal Hub</a>
+    </nav>
+  </footer>
+
+  <!-- RETRO MUSIC PLAYER -->
+  <div class="retro-player" id="retroPlayer" aria-label="Music player" hidden>
+    <div class="retro-player-inner">
+
+      <div class="retro-title-bar">
+        <span class="retro-logo">♫ R.DEV PLAYER v1.0</span>
+        <div class="retro-header-btns">
+          <button class="retro-hbtn" id="playerMinimise" aria-label="Minimise">−</button>
+          <button class="retro-hbtn retro-hbtn--close" id="playerClose" aria-label="Close">×</button>
+        </div>
+      </div>
+
+      <div class="retro-screen">
+        <div class="retro-now-playing">
+          <span class="retro-np-label">NOW PLAYING</span>
+          <div class="retro-np-title" id="retroTrackTitle">AKATSUKI</div>
+          <div class="retro-np-artist">SEEDHE MAUT</div>
+        </div>
+        <div class="retro-visualiser" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <div class="retro-progress-wrap">
+        <span class="retro-time" id="retroCurrent">0:00</span>
+        <input type="range" class="retro-progress" id="retroProgress" min="0" max="100" value="0" aria-label="Seek" />
+        <span class="retro-time" id="retroDuration">0:00</span>
+      </div>
+
+      <div class="retro-controls">
+        <button class="retro-btn" id="retroShuffle" aria-label="Shuffle" title="Shuffle">⇄</button>
+        <button class="retro-btn" id="retroPrev" aria-label="Previous">⋏</button>
+        <button class="retro-btn retro-btn--play" id="retroPlay" aria-label="Play">▶</button>
+        <button class="retro-btn" id="retroNext" aria-label="Next">⋎</button>
+        <button class="retro-btn" id="retroRepeat" aria-label="Repeat" title="Repeat">↻</button>
+      </div>
+
+      <div class="retro-volume-row">
+        <span class="retro-vol-icon">🔊</span>
+        <input type="range" class="retro-volume" id="retroVolume" min="0" max="1" step="0.01" value="0.8" aria-label="Volume" />
+      </div>
+
+      <div class="retro-tracklist" id="retroTracklist"></div>
+
+    </div>
+  </div>
+
+  <!-- MINIMISED PILL -->
+  <button class="retro-pill" id="retroPill" aria-label="Open music player" hidden>
+    ♫ NOW PLAYING
+  </button>
+
+  <audio id="retroAudio" preload="none"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
