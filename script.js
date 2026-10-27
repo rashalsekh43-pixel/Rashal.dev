@@ -123,7 +123,7 @@
   });
 })();
 
-// ===== PROJECTS — load from API, replace static cards only if DB has entries =====
+// ===== PROJECTS — append projects managed by the API to the featured cards =====
 (function () {
   const grid = document.getElementById('projectsGrid');
   if (!grid) return;
@@ -133,7 +133,7 @@
     .then(projects => {
       if (!projects.length) return;
       const colors = ['--red', '--yellow', '--violet'];
-      grid.innerHTML = projects.map((p, i) => `
+      grid.insertAdjacentHTML('beforeend', projects.map((p, i) => `
         <div class="neo-card project-card">
           <div class="thumb-placeholder thumb-placeholder${colors[i % 3]}"><span>${p.emoji || '\uD83C\uDF10'}</span></div>
           <div class="project-body">
@@ -145,7 +145,7 @@
               ${p.code_url ? `<a href="${p.code_url}" target="_blank" rel="noopener noreferrer" class="btn-outline small">Code</a>` : ''}
             </div>
           </div>
-        </div>`).join('');
+        </div>`).join(''));
     })
     .catch(() => {});
 })();
